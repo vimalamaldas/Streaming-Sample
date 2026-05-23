@@ -1,0 +1,17 @@
+<div>
+  <div *ngIf="error" class="error">
+    Error: {{ error }}
+  </div>
+
+  <div *ngIf="messages.length === 0 && !streamCompleted && !error" class="stream-item">
+    Waiting for data...
+  </div>
+
+  <div *ngIf="streamCompleted && !error" class="stream-item">
+    Stream completed.
+  </div>
+
+  <div *ngFor="let message of messages" class="stream-item">
+    {{ message }}
+  </div>
+</div>
