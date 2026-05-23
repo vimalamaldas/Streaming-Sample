@@ -1,6 +1,6 @@
 # Streaming Sample
 
-A full-stack demonstration project showcasing **Server-Sent Events (SSE)** for real-time bidirectional communication between an ASP.NET Core backend and an Angular frontend.
+A full-stack demonstration project showcasing **Server-Sent Events (SSE)** for real-time server to client communication between an ASP.NET Core backend and an Angular frontend.
 
 ## 📋 Overview
 
