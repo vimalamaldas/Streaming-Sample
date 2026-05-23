@@ -1,1 +1,0 @@
-{"ast":null,"code":"/**\n * This file is intentionally minimal for the sample streaming app.\n * Add polyfills only if the browser environment requires them.\n */\nimport 'zone.js';","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}
