@@ -1,0 +1,43 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Define styles -->
+  <defs>
+    <style>
+      .box { fill: #f0f0f0; stroke: #333; stroke-width: 2; }
+      .title { font-size: 16px; font-weight: bold; fill: #000; }
+      .content { font-size: 13px; fill: #333; }
+      .arrow-label { font-size: 12px; fill: #0066cc; font-weight: bold; }
+      .arrow { stroke: #333; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+      .stream-arrow { stroke: #00aa00; stroke-width: 2; fill: none; marker-end: url(#arrowhead-green); stroke-dasharray: 5,5; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#333"/>
+    </marker>
+    <marker id="arrowhead-green" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#00aa00"/>
+    </marker>
+  </defs>
+
+  <!-- Angular Frontend Box -->
+  <rect class="box" x="50" y="80" width="200" height="200" rx="5"/>
+  <text class="title" x="70" y="110">Angular Frontend</text>
+  
+  <text class="content" x="70" y="150">• EventSource listener</text>
+  <text class="content" x="70" y="175">• Real-time display</text>
+
+  <!-- ASP.NET Core API Box -->
+  <rect class="box" x="550" y="80" width="200" height="200" rx="5"/>
+  <text class="title" x="570" y="110">ASP.NET Core API</text>
+  
+  <text class="content" x="570" y="150">• Streaming endpoint</text>
+  <text class="content" x="570" y="175">• IAsyncEnumerable</text>
+  <text class="content" x="570" y="200">• Immediate flush</text>
+
+  <!-- HTTP GET Arrow (Request) -->
+  <path class="arrow" d="M 250 160 L 550 160"/>
+  <text class="arrow-label" x="360" y="150">HTTP GET</text>
+
+  <!-- SSE Stream Arrow (Response) -->
+  <path class="stream-arrow" d="M 550 240 L 250 240"/>
+  <text class="arrow-label" x="330" y="260">SSE Stream</text>
+  <text class="arrow-label" x="320" y="280">(text/event-stream)</text>
+</svg>
